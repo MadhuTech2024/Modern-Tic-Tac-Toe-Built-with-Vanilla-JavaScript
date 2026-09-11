@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="msg-container hide" id="msg-container">
+    <p id="msg">Congratulations, Winner!</p>
+    <button class="new-game-btn" id="new-btn">Play Again</button>
+</div>
+    <main class="game-wrapper">
+        <header class="game-header">
+            <h1 class="title">Tic Tac Toe</h1>
+            <div class="turn-indicator">
+                <span>Current Turn:</span>
+                <strong id="turn-display" class="player-x">Player X</strong>
+            </div>
+        </header>
+
+        <div class="board-card">
+            <div class="game">
+                <button class="box" aria-label="Square 1"></button>
+                <button class="box" aria-label="Square 2"></button>
+                <button class="box" aria-label="Square 3"></button>
+                <button class="box" aria-label="Square 4"></button>
+                <button class="box" aria-label="Square 5"></button>
+                <button class="box" aria-label="Square 6"></button>
+                <button class="box" aria-label="Square 7"></button>
+                <button class="box" aria-label="Square 8"></button>
+                <button class="box" aria-label="Square 9"></button>
+            </div>
+        </div>
+
+        <div class="action-panel">
+            <button class="reset-btn" id="reset-btn">
+                <span>Reset Game</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
